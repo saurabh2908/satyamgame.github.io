@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./satyam.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.5/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.5/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.5/dist/js/uikit-icons.min.js"></script>
+</head>
+<style>
+    body{
+        /* height: 55px; */
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, rgb(238, 159, 159), rgb(243, 210, 148), rgb(241, 241, 151), rgb(204, 226, 204), rgb(148, 148, 190), rgb(181, 163, 194), violet);
+    }
+    .card {
+        width: 100% !important;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card:hover {
+    width: 100% !important;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+</style>
+<body>
+   <div class="container">
+<div class="card">
+    <h3>Q: Satyam Ko Maths Mein Kitne Number Mile the</h3>
+    <div id="q1">
+    <form>
+        <input name="answer" onclick="getAnswer(90,'q1a1')" type="radio" value="90"><span>A)90</span><br>
+        <input name="answer" type="radio" onclick="getAnswer(30,'q1a2')" value="30"><span>B)30</span><br>
+        <input name="answer" type="radio" onclick="getAnswer(0,'q1a3')" value="0"><span>C)0</span><br>
+        <input name="answer" type="radio" onclick="getAnswer(100,'q1a4')" value="100"><span>D)100</span><br>
+    </form>
+    </div>
+</div>
+
+<div class="card">
+    <h3>Q: Satyam Ko Hindi Mein Kitne Number Mile the</h3>
+    <div id="q1">
+    <form>
+        <input name="answer" onclick="getAnswer(90,'q2a1')" type="radio" value="90"><span>A)90</span><br>
+        <input name="answer" type="radio" onclick="getAnswer(30,'q2a2')" value="30"><span>B)30</span><br>
+        <input name="answer" type="radio" onclick="getAnswer(0,'q2a3')" value="0"><span>C)0</span><br>
+        <input name="answer" type="radio" onclick="getAnswer(100,'q2a4')" value="100"><span>D)100</span><br>
+    </form>
+    </div>
+</div>
+
+
+<div class="card">
+    <h3>Q: Satyam Ko Science Mein Kitne Number Mile the</h3>
+    <div id="q1">
+    <form>
+        <input name="answer" onclick="getAnswer(90,'31a1')" type="radio" value="90"><span>A)90</span><br>
+        <input name="answer" type="radio" onclick="getAnswer(30,'q3a2')" value="30"><span>B)30</span><br>
+        <input name="answer" type="radio" onclick="getAnswer(0,'q3a3')" value="0"><span>C)0</span><br>
+        <input name="answer" type="radio" onclick="getAnswer(100,'q3a4')" value="100"><span>D)100</span><br>
+    </form>
+    </div>
+</div>
+
+
+<div class="card">
+    <h3>Q: Satyam Ko English Mein Kitne Number Mile the</h3>
+    <div id="q1">
+    <form>
+        <input name="answer" onclick="getAnswer(90,'q4a1')" type="radio" value="90"><span>A)90</span><br>
+        <input name="answer" type="radio" onclick="getAnswer(30,'q4a2')" value="30"><span>B)30</span><br>
+        <input name="answer" type="radio" onclick="getAnswer(0,'q4a3')" value="0"><span>C)0</span><br>
+        <input name="answer" type="radio" onclick="getAnswer(100,'q4a4')" value="100"><span>D)100</span><br>
+    </form>
+    </div>
+</div>
+
+
+
+<div class="card">
+    <h3>Q: Satyam Ko social science Mein Kitne Number Mile the</h3>
+    <div id="q1">
+    <form>
+        <input name="answer" onclick="getAnswer(90,'q5a1')" type="radio" value="90"><span>A)90</span><br>
+        <input name="answer" type="radio" onclick="getAnswer(30,'q5a2')" value="30"><span>B)30</span><br>
+        <input name="answer" type="radio" onclick="getAnswer(0,'q5a3')" value="0"><span>C)0</span><br>
+        <input name="answer" type="radio" onclick="getAnswer(100,'q5a4')" value="100"><span>D)100</span><br>
+    </form>
+    </div>
+</div>
+   
+    <!-- <a class="uk-button uk-button-default" href="#modal-center" uk-toggle>Open</a> -->
+
+    <p uk-margin>
+        <!-- <a class="uk-button uk-button-default" href="#modal-media-image" uk-toggle>Image</a>
+        <a class="uk-button uk-button-default" href="#modal-media-video" uk-toggle>Video</a>
+        <a class="uk-button uk-button-default" href="#modal-media-youtube" uk-toggle>YouTube</a>
+        <a class="uk-button uk-button-default" href="#modal-media-vimeo" uk-toggle>Vimeo</a> -->
+    </p>
+    
+    <div id="modal-media-image" class="uk-flex-top" uk-modal>
+         <!-- <audio controls>
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg"> -->
+        <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+            <button class="uk-modal-close-outside" type="button" uk-close></button>
+            <video src="./images/Adhbhut KBC Meme Adbhut KBC Meme Templat (You2Audio.Com).mp4" width="800" height="800" controls autoplay playsinline uk-video></video>
+    
+        </div>
+    </div>
+    
+    <div id="modal-media-video" class="uk-flex-top" uk-modal>
+        <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+            <button class="uk-modal-close-outside" type="button" uk-close></button>
+            <img src="./images/DMPiqoOV4AAhMdS.jfif" width="800" height="800"></video>
+        </div>
+    </div>
+    
+</div>
+</body>
+</html>
